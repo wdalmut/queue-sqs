@@ -51,7 +51,7 @@ Set as usual
 ```php
 use Corley\Queue\Queue;
 
-$queue = new Queue("https://sqs.aws.amazon.com/125897125982/test", $adapter);
+$queue = new Queue("https://sqs.aws.amazon.com/155555555555/test", $adapter);
 $queue->send(json_encode(["test" => "ok"]));
 
 list($receipt, $message) = $queue->receive();
